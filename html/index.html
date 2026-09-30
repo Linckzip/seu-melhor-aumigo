@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seu Melhor Aumigo</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ========================= -->
+        <!-- MENU -->
+        <!-- ========================= -->
+
+        <nav>
+
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">☰</label>
+
+            <ul class="menu-list">
+
+                <li class="dropdown">
+
+                    <a href="#sobre" data-rota="sobre">
+                        Sobre nós
+                    </a>
+
+                    <ul class="submenu">
+
+                        <li>
+                            <a href="#historia" data-rota="historia">
+                                História
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#atividades" data-rota="atividades">
+                                Nossas Atividades
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="#projetos" data-rota="projetos">
+                        Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#cadastro" data-rota="cadastro">
+                        Cadastro
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- ========================= -->
+        <!-- CONTEÚDO DA SPA -->
+        <!-- ========================= -->
+
+        <main id="app">
+
+            <!-- ========================= -->
+            <!-- PÁGINA: SOBRE NÓS -->
+            <!-- ========================= -->
+
+            <section id="sobre" class="pagina ativa">
+
+                <header class="pagina-header">
+
+                    <div class="center">
+
+                        <img
+                            src="/images/melhor aumigo.jpg"
+                            alt="Logo da ONG Aumigo">
+
+                    </div>
+
+                    <h1>Seu Melhor Aumigo</h1>
+
+                    <h2>Resgate e proteção animal</h2>
+
+                </header>
+
+
+                <div class="conteudo-sobre">
+
+                    <section>
+
+                        <h2>Sobre nós</h2>
+
+                        <p>
+                            A "Seu Melhor Aumigo" é uma ONG fictícia dedicada à
+                            proteção e ao bem-estar de animais em situação de
+                            abandono e vulnerabilidade. Nosso objetivo é oferecer
+                            uma segunda chance a cães e gatos que precisam de
+                            cuidado, proteção e uma família.
+
+                            A organização atua no resgate de animais, oferecendo
+                            atendimento veterinário, alimentação, abrigo temporário
+                            e todo o suporte necessário para sua recuperação.
+                            Após receberem os cuidados, os animais são encaminhados
+                            para adoção responsável, buscando encontrar um lar
+                            seguro, amoroso e preparado para recebê-los.
+                        </p>
+
+                    </section>
+
+
+                    <section id="historia">
+
+                        <h2>História</h2>
+
+                        <p>
+                            Um pequeno grupo de pessoas compartilhava o mesmo
+                            desejo: ajudar animais abandonados a terem uma vida
+                            mais digna e feliz.
+
+                            Tudo começou quando alguns voluntários passaram a
+                            resgatar cães e gatos encontrados nas ruas, oferecendo
+                            alimentação, cuidados veterinários e um lugar seguro
+                            para se recuperarem. Com o tempo, mais pessoas se
+                            juntaram à causa e o que começou como uma iniciativa
+                            pequena se tornou um projeto dedicado à proteção animal.
+                        </p>
+
+                    </section>
+
+
+                    <section id="atividades">
+
+                        <h2>Nossas Atividades</h2>
+
+                        <p>Resgate de animais</p>
+
+                        <p>Acolhimento</p>
+
+                        <p>Campanha de castração</p>
+
+                        <p>Adoção responsável</p>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+
+            <!-- ========================= -->
+            <!-- PÁGINA: PROJETOS -->
+            <!-- ========================= -->
+
+            <section id="projetos" class="pagina">
+
+                <header class="pagina-header">
+
+                    <h1>Nossos Projetos</h1>
+
+                    <p>
+                        Aqui você encontrará projetos realizados em nossa ONG.
+                        Caso tenha interesse em mais informações de como ajudar,
+                        entre em contato.
+                    </p>
+
+                </header>
+
+
+                <!-- Projetos gerados pelo JavaScript -->
+
+                <div
+                    class="projetos-grid"
+                    id="lista-projetos">
+                </div>
+
+            </section>
+
+
+            <!-- ========================= -->
+            <!-- PÁGINA: CADASTRO -->
+            <!-- ========================= -->
+
+            <section id="cadastro" class="pagina">
+
+                <div class="titulo">
+
+                    <span class="badge">
+                        Inscrições abertas
+                    </span>
+
+                    <h1 id="titulo">
+                        Cadastro de Voluntários
+                    </h1>
+
+                    <p id="subtitulo">
+                        Complete suas informações
+                    </p>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- FORMULÁRIO -->
+                <!-- ========================= -->
+
+                <form id="formulario">
+
+                    <fieldset class="grupo">
+
+                        <legend>
+                            DADOS PESSOAIS
+                        </legend>
+
+
+                        <div class="campo">
+
+                            <label for="nome">
+                                Nome
+                            </label>
+
+                            <input
+                                type="text"
+                                name="nome"
+                                id="nome"
+                                required
+                                pattern="[A-Za-zÀ-ÿ ]+">
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="sobrenome">
+                                Sobrenome
+                            </label>
+
+                            <input
+                                type="text"
+                                name="sobrenome"
+                                id="sobrenome"
+                                required
+                                pattern="[A-Za-zÀ-ÿ ]+">
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <div class="campo">
+
+                        <label for="CPF">
+                            CPF
+                        </label>
+
+                        <input
+                            type="text"
+                            name="CPF"
+                            id="CPF"
+                            required
+                            pattern="[0-9]{11}">
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label>
+                            Você já foi voluntário antes?
+                        </label>
+
+                        <label class="opcao">
+
+                            <input
+                                type="radio"
+                                name="voluntario"
+                                value="Sim"
+                                required>
+
+                            Sim
+
+                        </label>
+
+
+                        <label class="opcao">
+
+                            <input
+                                type="radio"
+                                name="voluntario"
+                                value="Não">
+
+                            Não
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="areas">
+                            Qual área você gostaria de ser voluntário?
+                        </label>
+
+                        <select
+                            id="areas"
+                            name="areas"
+                            required>
+
+                            <option
+                                selected
+                                disabled
+                                value="">
+                                Selecione
+                            </option>
+
+                            <option>
+                                Cuidado com os Animais
+                            </option>
+
+                            <option>
+                                Feiras de Adoção
+                            </option>
+
+                            <option>
+                                Campanhas e Arrecadações
+                            </option>
+
+                            <option>
+                                Limpeza e Organização
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <fieldset class="grupo">
+
+                        <div id="check">
+
+                            <label>
+                                Em quais períodos você estaria disponível?
+                            </label>
+
+                            <br><br>
+
+
+                            <input
+                                type="checkbox"
+                                id="questionario-manha"
+                                name="manha"
+                                value="Manhã">
+
+                            <label
+                                class="opcao"
+                                for="questionario-manha">
+                                Manhã
+                            </label>
+
+
+                            <input
+                                type="checkbox"
+                                id="questionario-tarde"
+                                name="tarde"
+                                value="Tarde">
+
+                            <label
+                                class="opcao"
+                                for="questionario-tarde">
+                                Tarde
+                            </label>
+
+
+                            <input
+                                type="checkbox"
+                                id="questionario-noite"
+                                name="noite"
+                                value="Noite">
+
+                            <label
+                                class="opcao"
+                                for="questionario-noite">
+                                Noite
+                            </label>
+
+
+                            <input
+                                type="checkbox"
+                                id="questionario-fim"
+                                name="fim"
+                                value="Finais de Semana">
+
+                            <label
+                                class="opcao"
+                                for="questionario-fim">
+                                Finais de Semana
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <div class="campo">
+
+                        <label for="motivacao">
+                            Conte por que gostaria de se juntar a nós...
+                        </label>
+
+                        <textarea
+                            rows="6"
+                            id="motivacao"
+                            name="motivacao"></textarea>
+
+
+                        <button
+                            class="botao"
+                            type="submit">
+
+                            Concluído
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <!-- ========================= -->
+                <!-- MODAL BOOTSTRAP -->
+                <!-- ========================= -->
+
+                <div
+                    class="modal fade"
+                    id="modal-confirmacao"
+                    tabindex="-1"
+                    aria-labelledby="titulo-modal"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h2
+                                    class="modal-title"
+                                    id="titulo-modal">
+
+                                    Confirmar cadastro
+
+                                </h2>
+
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
+
+                            </div>
+
+
+                            <div class="modal-body">
+
+                                <p>
+                                    Deseja confirmar o envio do seu cadastro
+                                    para a ONG?
+                                </p>
+
+                            </div>
+
+
+                            <div class="modal-footer">
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    id="cancelar">
+
+                                    Cancelar
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="btn"
+                                    id="confirmar">
+
+                                    Confirmar
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- TOAST -->
+                <!-- ========================= -->
+
+                <div
+                    class="toast"
+                    id="toast"
+                    role="status"
+                    aria-live="polite">
+
+                    Cadastro realizado com sucesso!
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ========================= -->
+        <!-- RODAPÉ -->
+        <!-- ========================= -->
+
+        <footer>
+
+            <a
+                href="https://www.instagram.com/casadoviralata/"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="instagram">
+
+                <img
+                    src="/images/svg/instagram.svg"
+                    alt="Instagram da ONG">
+
+                <p>Instagram</p>
+
+            </a>
+
+
+            <a
+                href="https://www.facebook.com/viralataabrigo/?locale=pt_BR"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="facebook">
+
+                <img
+                    src="/images/svg/facebook.svg"
+                    alt="Facebook da ONG">
+
+                <p>Facebook</p>
+
+            </a>
+
+
+            <a
+                href="https://www.youtube.com/@GingerCatOfficial/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="youtube">
+
+                <img
+                    src="/images/svg/youtube.svg"
+                    alt="YouTube da ONG">
+
+                <p>YouTube</p>
+
+            </a>
+
+        </footer>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+
+    <!-- JavaScript modular do projeto -->
+
+    <script
+        type="module"
+        src="/js/script.js">
+    </script>
+
+</body>
+
+</html>
