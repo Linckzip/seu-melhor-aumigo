@@ -16,18 +16,7 @@ export function iniciarRotas() {
         let paginaDestino = rota;
 
 
-        // História e Atividades pertencem
-        // à página Sobre nós
-
-        if (
-            rota === "historia" ||
-            rota === "atividades"
-        ) {
-
-            paginaDestino = "sobre";
-
-        }
-
+        // Verifica se a rota existe
 
         const pagina =
             document.getElementById(paginaDestino);
@@ -65,33 +54,12 @@ export function iniciarRotas() {
         ).checked = false;
 
 
-        // Rola para História ou Atividades
+        // Volta para o topo da página
 
-        if (
-            rota === "historia" ||
-            rota === "atividades"
-        ) {
-
-            const secao =
-                document.getElementById(rota);
-
-
-            if (secao) {
-
-                secao.scrollIntoView({
-                    behavior: "smooth"
-                });
-
-            }
-
-        } else {
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-
-        }
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
 
     }
 

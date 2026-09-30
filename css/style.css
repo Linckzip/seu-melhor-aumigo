@@ -134,57 +134,6 @@ nav a:hover {
 }
 
 
-/* DROPDOWN */
-
-.dropdown {
-    position: relative;
-}
-
-
-.dropdown > a::after {
-    content: " ▾";
-}
-
-
-.submenu {
-    position: absolute;
-
-    top: calc(100% + var(--espaco-1));
-    left: 0;
-
-    min-width: 160px;
-
-    padding: var(--espaco-1);
-
-    background-color: var(--cor-fundo);
-
-    list-style-type: none;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translateY(-8px);
-
-    transition:
-        opacity 0.3s ease,
-        transform 0.3s ease,
-        visibility 0.3s ease;
-}
-
-
-.submenu li {
-    padding: var(--espaco-1);
-}
-
-
-.dropdown:hover .submenu,
-.dropdown:focus-within .submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-
 /* ========================= */
 /* SPA */
 /* ========================= */
@@ -598,7 +547,10 @@ button {
 #modal-confirmacao .modal-footer {
     border-top: 0;
 
-    padding: var(--espaco-2) var(--espaco-3) var(--espaco-3);
+    padding:
+        var(--espaco-2)
+        var(--espaco-3)
+        var(--espaco-3);
 
     gap: var(--espaco-2);
 }
@@ -887,25 +839,6 @@ footer p {
     }
 
 
-    /* DROPDOWN */
-
-    .submenu {
-        position: static;
-
-        min-width: 0;
-
-        padding: 0;
-
-        margin-top: var(--espaco-1);
-
-        opacity: 1;
-
-        visibility: visible;
-
-        transform: none;
-    }
-
-
     /* SOBRE */
 
     header img {
@@ -1010,25 +943,6 @@ footer p {
 
     .menu-list > li {
         width: 100%;
-    }
-
-
-    /* DROPDOWN */
-
-    .submenu {
-        position: static;
-
-        min-width: 0;
-
-        padding: 0;
-
-        margin-top: var(--espaco-1);
-
-        opacity: 1;
-
-        visibility: visible;
-
-        transform: none;
     }
 
 
