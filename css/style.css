@@ -1145,3 +1145,167 @@ footer p {
     }
 
 }
+
+/* ========================= */
+/* ALTO CONTRASTE */
+/* ========================= */
+
+.botao-contraste {
+    position: fixed;
+
+    top: 16px;
+    right: 16px;
+
+    z-index: 1000;
+
+    background-color: #000000;
+    color: #FFFFFF;
+
+    border: 2px solid #FFFF00;
+    border-radius: 5px;
+
+    padding: 8px 16px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.botao-contraste:hover {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+
+/* ========================= */
+/* MODO ALTO CONTRASTE */
+/* ========================= */
+
+body.alto-contraste {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body.alto-contraste a {
+    color: #FFFF00;
+}
+
+body.alto-contraste nav a:hover {
+    color: #FFFFFF;
+}
+
+body.alto-contraste .pagina-header h1,
+body.alto-contraste .titulo h1,
+body.alto-contraste .conteudo-sobre h2,
+body.alto-contraste .card h3,
+body.alto-contraste legend {
+    color: #FFFF00;
+}
+
+body.alto-contraste .pagina-header h2 {
+    color: #FFFFFF;
+}
+
+body.alto-contraste .card {
+    background-color: #000000;
+    color: #FFFFFF;
+
+    border-color: #FFFF00;
+}
+
+body.alto-contraste .campo > label,
+body.alto-contraste .conteudo-sobre p,
+body.alto-contraste .pagina-header p,
+body.alto-contraste .card p {
+    color: #FFFFFF;
+}
+
+body.alto-contraste input,
+body.alto-contraste select,
+body.alto-contraste textarea {
+    background-color: #000000;
+    color: #FFFFFF;
+
+    border-color: #FFFF00;
+}
+
+body.alto-contraste select option {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body.alto-contraste .botao {
+    background-color: #FFFF00;
+    color: #000000;
+
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste .botao:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+body.alto-contraste .badge {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+body.alto-contraste #modal-confirmacao {
+    background-color: #000000;
+    color: #FFFFFF;
+
+    border: 2px solid #FFFF00;
+}
+
+body.alto-contraste #modal-confirmacao h2 {
+    color: #FFFF00;
+}
+
+body.alto-contraste #modal-confirmacao p {
+    color: #FFFFFF;
+}
+
+body.alto-contraste #cancelar {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+body.alto-contraste #confirmar {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+body.alto-contraste .toast {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+body.alto-contraste footer a {
+    color: #FFFF00;
+}
+
+body.alto-contraste .botao-contraste {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+body.alto-contraste .botao-contraste:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+/* ========================= */
+/* FOCO */
+/* ========================= */
+
+.botao-contraste:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #FFFF00;
+    outline-offset: 3px;
+}

@@ -26,35 +26,58 @@
         <!-- MENU -->
         <!-- ========================= -->
 
-        <nav>
+        <nav aria-label="Navegação principal">
 
-            <input type="checkbox" id="menu-toggle">
+    <input
+        type="checkbox"
+        id="menu-toggle"
+        aria-label="Abrir ou fechar menu de navegação"
+        aria-controls="menu-principal">
 
-            <label for="menu-toggle" class="menu-icon">☰</label>
+    <label
+        for="menu-toggle"
+        class="menu-icon"
+        aria-hidden="true">
+        ☰
+    </label>
 
-            <ul class="menu-list">
+    <ul class="menu-list" id="menu-principal">
 
-                <li>
-                    <a href="#sobre" data-rota="sobre">
-                        Sobre nós
-                    </a>
-                </li>
+        <li>
+            <a
+                href="#sobre"
+                data-rota="sobre">
+                Sobre nós
+            </a>
+        </li>
 
-                <li>
-                    <a href="#projetos" data-rota="projetos">
-                        Projetos
-                    </a>
-                </li>
+        <li>
+            <a
+                href="#projetos"
+                data-rota="projetos">
+                Projetos
+            </a>
+        </li>
 
-                <li>
-                    <a href="#cadastro" data-rota="cadastro">
-                        Cadastro
-                    </a>
-                </li>
+        <li>
+            <a
+                href="#cadastro"
+                data-rota="cadastro">
+                Cadastro
+            </a>
+        </li>
 
-            </ul>
+    </ul>
 
-        </nav>
+    <button
+        type="button"
+        id="botao-contraste"
+        class="botao-contraste"
+        aria-pressed="false">
+        Alto contraste
+    </button>
+
+</nav>
 
 
         <!-- ========================= -->
@@ -67,7 +90,10 @@
             <!-- PÁGINA: SOBRE NÓS -->
             <!-- ========================= -->
 
-            <section id="sobre" class="pagina ativa">
+            <section
+                id="sobre"
+                class="pagina ativa"
+                aria-labelledby="titulo-sobre">
 
                 <header class="pagina-header">
 
@@ -79,18 +105,25 @@
 
                     </div>
 
-                    <h1>Seu Melhor Aumigo</h1>
+                    <h1 id="titulo-sobre">
+                        Seu Melhor Aumigo
+                    </h1>
 
-                    <h2>Resgate e proteção animal</h2>
+                    <h2>
+                        Resgate e proteção animal
+                    </h2>
 
                 </header>
 
 
                 <div class="conteudo-sobre">
 
-                    <section>
+                    <section
+                        aria-labelledby="subtitulo-sobre">
 
-                        <h2>Sobre nós</h2>
+                        <h2 id="subtitulo-sobre">
+                            Sobre nós
+                        </h2>
 
                         <p>
                             A "Seu Melhor Aumigo" é uma ONG fictícia dedicada à
@@ -110,9 +143,13 @@
                     </section>
 
 
-                    <section id="historia">
+                    <section
+                        id="historia"
+                        aria-labelledby="titulo-historia">
 
-                        <h2>História</h2>
+                        <h2 id="titulo-historia">
+                            História
+                        </h2>
 
                         <p>
                             Um pequeno grupo de pessoas compartilhava o mesmo
@@ -130,17 +167,29 @@
                     </section>
 
 
-                    <section id="atividades">
+                    <section
+                        id="atividades"
+                        aria-labelledby="titulo-atividades">
 
-                        <h2>Nossas Atividades</h2>
+                        <h2 id="titulo-atividades">
+                            Nossas Atividades
+                        </h2>
 
-                        <p>Resgate de animais</p>
+                        <p>
+                            Resgate de animais
+                        </p>
 
-                        <p>Acolhimento</p>
+                        <p>
+                            Acolhimento
+                        </p>
 
-                        <p>Campanha de castração</p>
+                        <p>
+                            Campanha de castração
+                        </p>
 
-                        <p>Adoção responsável</p>
+                        <p>
+                            Adoção responsável
+                        </p>
 
                     </section>
 
@@ -153,11 +202,16 @@
             <!-- PÁGINA: PROJETOS -->
             <!-- ========================= -->
 
-            <section id="projetos" class="pagina">
+            <section
+                id="projetos"
+                class="pagina"
+                aria-labelledby="titulo-projetos">
 
                 <header class="pagina-header">
 
-                    <h1>Nossos Projetos</h1>
+                    <h1 id="titulo-projetos">
+                        Nossos Projetos
+                    </h1>
 
                     <p>
                         Aqui você encontrará projetos realizados em nossa ONG.
@@ -182,7 +236,10 @@
             <!-- PÁGINA: CADASTRO -->
             <!-- ========================= -->
 
-            <section id="cadastro" class="pagina">
+            <section
+                id="cadastro"
+                class="pagina"
+                aria-labelledby="titulo">
 
                 <div class="titulo">
 
@@ -205,7 +262,9 @@
                 <!-- FORMULÁRIO -->
                 <!-- ========================= -->
 
-                <form id="formulario">
+                <form
+                    id="formulario"
+                    aria-labelledby="titulo">
 
                     <fieldset class="grupo">
 
@@ -264,11 +323,11 @@
                     </div>
 
 
-                    <div class="campo">
+                    <fieldset class="campo">
 
-                        <label>
+                        <legend>
                             Você já foi voluntário antes?
-                        </label>
+                        </legend>
 
                         <label class="opcao">
 
@@ -294,7 +353,7 @@
 
                         </label>
 
-                    </div>
+                    </fieldset>
 
 
                     <div class="campo">
@@ -338,14 +397,11 @@
 
                     <fieldset class="grupo">
 
+                        <legend>
+                            Em quais períodos você estaria disponível?
+                        </legend>
+
                         <div id="check">
-
-                            <label>
-                                Em quais períodos você estaria disponível?
-                            </label>
-
-                            <br><br>
-
 
                             <input
                                 type="checkbox"
@@ -436,7 +492,10 @@
                     class="modal fade"
                     id="modal-confirmacao"
                     tabindex="-1"
+                    role="dialog"
+                    aria-modal="true"
                     aria-labelledby="titulo-modal"
+                    aria-describedby="descricao-modal"
                     aria-hidden="true">
 
                     <div class="modal-dialog modal-dialog-centered">
@@ -465,7 +524,7 @@
 
                             <div class="modal-body">
 
-                                <p>
+                                <p id="descricao-modal">
                                     Deseja confirmar o envio do seu cadastro
                                     para a ONG?
                                 </p>
@@ -538,7 +597,9 @@
                     src="/images/svg/instagram.svg"
                     alt="Instagram da ONG">
 
-                <p>Instagram</p>
+                <p>
+                    Instagram
+                </p>
 
             </a>
 
@@ -553,7 +614,9 @@
                     src="/images/svg/facebook.svg"
                     alt="Facebook da ONG">
 
-                <p>Facebook</p>
+                <p>
+                    Facebook
+                </p>
 
             </a>
 
@@ -568,7 +631,9 @@
                     src="/images/svg/youtube.svg"
                     alt="YouTube da ONG">
 
-                <p>YouTube</p>
+                <p>
+                    YouTube
+                </p>
 
             </a>
 
