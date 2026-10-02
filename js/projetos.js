@@ -10,7 +10,7 @@ const projetos = [
         descricao:
             "Resgatamos animais encontrados em situação de abandono e oferecemos atendimento veterinário, alimentação e um espaço seguro até que estejam preparados para encontrar um novo lar.",
 
-        imagem: "/images/projetos/veterinario-gato.jpg",
+        imagem: "/images/projetos/veterinario-gato.webp",
 
         alt: "Gato sendo cuidado no veterinário"
     },
@@ -21,7 +21,7 @@ const projetos = [
         descricao:
             "Realizamos campanhas de vacinação, vermifugação e cuidados básicos para animais em situação de vulnerabilidade, ajudando a melhorar sua qualidade de vida.",
 
-        imagem: "/images/projetos/vacinação.jpg",
+        imagem: "/images/projetos/vacinação.webp",
 
         alt: "Cachorro sendo vacinado"
     },
@@ -32,7 +32,7 @@ const projetos = [
         descricao:
             "Organizamos feiras e campanhas de adoção responsável para conectar nossos animais resgatados a famílias que possam oferecer carinho, segurança e uma vida digna.",
 
-        imagem: "/images/projetos/gato-sendo-adotado.jpg",
+        imagem: "/images/projetos/gato-sendo-adotado.webp",
 
         alt: "Gato sendo adotado"
     },
@@ -43,7 +43,7 @@ const projetos = [
         descricao:
             "Promovemos ações de castração para cães e gatos, contribuindo para o controle da população de animais abandonados e para a prevenção de problemas de saúde.",
 
-        imagem: "/images/projetos/Cachorro-castrado.jpg",
+        imagem: "/images/projetos/Cachorro-castrado.webp",
 
         alt: "Cachorro com cone para segurança pós-castração"
     }
@@ -77,7 +77,10 @@ export function renderizarProjetos() {
 
                 <img
                     src="${projeto.imagem}"
-                    alt="${projeto.alt}">
+                    alt="${projeto.alt}"
+                    width="360"
+                    height="200"
+                    loading="lazy">
 
             </div>
         `;
