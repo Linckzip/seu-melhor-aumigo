@@ -1,20 +1,9 @@
-// =========================
-// IMPORTAÇÃO DOS MÓDULOS
-// =========================
-
 import { renderizarProjetos } from "./projetos.js";
-
 import { iniciarRotas } from "./rotas.js";
-
 import { iniciarFormulario } from "./formulario.js";
-
-
-// =========================
-// INICIALIZAÇÃO
-// =========================
+import { iniciarAcessibilidade } from "./acessibilidade.js";
 
 renderizarProjetos();
-
 iniciarRotas();
-
 iniciarFormulario();
+iniciarAcessibilidade();

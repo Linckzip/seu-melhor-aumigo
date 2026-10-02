@@ -1,0 +1,28 @@
+{
+  "name": "ong",
+  "version": "1.0.0",
+  "description": "O Seu Melhor Aumigo é um projeto de site para uma ONG fictícia de proteção animal. O objetivo é apresentar a organização, seus projetos e disponibilizar um formulário para cadastro de voluntários.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linckzip/seu-melhor-aumigo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Linckzip/seu-melhor-aumigo/issues"
+  },
+  "homepage": "https://github.com/Linckzip/seu-melhor-aumigo#readme",
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "vite": "^8.3.2"
+  }
+}
